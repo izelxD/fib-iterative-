@@ -1,24 +1,9 @@
-COUNT=0
-def recur_fibo(n):  
-   global COUNT
-   COUNT=COUNT+1
-   if n <= 1:  
-       return n  
-   else:  
-       return(recur_fibo(n-1) + recur_fibo(n-2))  
-# take input from the user  
-
-
-nterms = int(input("How many terms? "))  
-# check if the number of terms is valid  
-if nterms <= 0:  
-   print("Plese enter a positive integer")  
-else:  
-   print("Fibonacci sequence:")  
-   for i in range(nterms):  
-       print(recur_fibo(i))
-
-
-print("Steps reqired using Counter ", COUNT)
-
-         
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+ 
+ 
+if __name__ == "__main__":
+    n = 9
+    print(fibonacci(n))
