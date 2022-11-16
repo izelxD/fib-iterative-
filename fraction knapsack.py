@@ -1,7 +1,7 @@
 # Structure for an item which stores weight and
 # corresponding value of Item
 class Item:
-	def _init_(self, value, weight):
+	def __init__(self, value, weight):
 		self.value = value
 		self.weight = weight
 
@@ -34,7 +34,7 @@ def fractionalKnapsack(W, arr):
 
 
 # Driver Code
-if _name_ == "_main_":
+if __name__ == "__main__":
 
 	W = 50
 	arr = [Item(60, 10), Item(100, 20), Item(120, 30)]
