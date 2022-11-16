@@ -1,9 +1,25 @@
-def fibonacci(n):
-    if n <= 1:
-        return n
-    return fibonacci(n-1) + fibonacci(n-2)
- 
- 
-if __name__ == "__main__":
-    n = 9
-    print(fibonacci(n))
+COUNT = 0
+x=int(input("Enter Number of Terms :"))
+first=0
+sec=1
+c=0
+if(x<0):
+    print("Enter valid input..")
+elif(x==0):
+    print(0)
+elif(x==1):
+    print("Fibbonacci series upto",x,"is",first)
+else:
+    while c<x:
+        print(first) 
+        COUNT = COUNT +1
+        nth=first+sec 
+        COUNT = COUNT +1
+        first=sec 
+        sec=nth 
+        COUNT = COUNT +1
+        c+=1  
+        COUNT = COUNT +1
+        
+
+print("Steps required using Counter ", COUNT)
